@@ -37,14 +37,13 @@
   <!-- BODY -->
   <main class="page__body">
 
-    <!-- ★ IMAGE SLOT 1: 건강검진 준비 타임라인 (NEW — 182mm × 30mm) -->
+    <!-- 히어로 타임라인 인포그래픽 (182mm × 30mm, ratio 6.07:1, 2184×360px) -->
     <section>
       <div class="ai-visual" style="height:30mm; min-height:0; position:relative;">
         <img class="ai-visual__image"
              src="checkup-prep-timeline.png"
              alt="건강검진 D-3 → D-Day 준비 타임라인">
-        <!-- HTML overlay labels (이미지에 한글 텍스트 없으므로 오버레이) -->
-        <div style="position:absolute; inset:0; display:grid; grid-template-columns:repeat(4,1fr); align-items:end; padding:0 6mm 2.5mm;">
+        <div style="position:absolute; inset:0; display:grid; grid-template-columns:23% 23% 27% 23%; align-items:end; padding:0 4mm 2mm;">
           <div style="text-align:center; font-size:7.5pt; font-weight:600; color:var(--color-navy);">D-3 · 3일 전</div>
           <div style="text-align:center; font-size:7.5pt; font-weight:600; color:var(--color-navy);">D-1 · 전날</div>
           <div style="text-align:center; font-size:7.5pt; font-weight:600; color:var(--color-navy);">D-Day · 당일 아침</div>
@@ -70,7 +69,7 @@
         <div class="stat-cell stat-cell--high">
           <div class="stat-cell__label">위내시경 (EGD)</div>
           <div class="stat-cell__value">8</div>
-          <div class="stat-cell__unit">시간 절대 금식</div>
+          <div class="stat-cell__unit">시간 절대 금식 (물 X)</div>
         </div>
         <div class="stat-cell">
           <div class="stat-cell__label">도착 시각</div>
@@ -80,107 +79,103 @@
       </div>
     </section>
 
-    <!-- 시간대별 준비 (2-col: 음식 비주얼 + 당일 준비물) -->
+    <!-- 시간대별 준비사항 (2-col) -->
     <section>
       <h2 class="section-heading">시간대별 준비사항 (Timeline Checklist)</h2>
       <div class="body-2col">
 
-        <!-- 3일 전~전날: 기존 에셋 + 핵심 텍스트 -->
+        <!-- 3일 전~전날 -->
         <div class="card">
           <div class="card-label card-label--steel">3일 전 ~ 전날 · BEFORE</div>
-          <!-- ★ IMAGE SLOT 2: 기존 에셋 egd-prep-food-grid (88mm card 내부) -->
-          <div class="ai-visual" style="height:22mm; min-height:0; margin-bottom:2mm; border:none;">
+          <div class="ai-visual" style="height:20mm; min-height:0; margin-bottom:2mm; border:none;">
             <img class="ai-visual__image"
                  src="../../../shared/assets/generated/egd-prep-food-grid-20260513.png"
                  alt="금식 전 음식 가이드">
           </div>
-          <ul class="card-list" style="font-size:8.5pt; line-height:1.55;">
-            <li><strong>과음 금지 (3일 전~)</strong> — 간수치·TG 상승</li>
-            <li><strong>격렬한 운동 자제</strong> — CK·LDH 왜곡</li>
-            <li><strong>전날 저녁 9시 이후 금식</strong> — 죽·미음 권장</li>
-            <li><strong>충분한 수면 7h + 카페인↓</strong></li>
+          <ul class="card-list" style="font-size:8.5pt; line-height:1.5;">
+            <li><strong>1. 과음 금지 (3일 전~)</strong> — 간수치(AST/ALT)·TG 상승</li>
+            <li><strong>2. 격렬한 운동 자제</strong> — CK·LDH 왜곡, 산책은 OK</li>
+            <li><strong>3. 전날 저녁 9시 이후 금식</strong> — 죽·미음 권장</li>
+            <li><strong>4. 기름진 음식·과식 피하기</strong></li>
+            <li><strong>5. 충분한 수면 7h + 카페인↓</strong></li>
           </ul>
         </div>
 
-        <!-- 당일 아침: 새 이미지 + 핵심 텍스트 -->
+        <!-- 당일 아침 (78mm × 20mm 내부 이미지, ratio 3.9:1) -->
         <div class="card card--accent">
           <div class="card-label card-label--navy">검진 당일 아침 · DAY OF</div>
-          <!-- ★ IMAGE SLOT 3: 당일 지참물 + 복장 (NEW — 78mm × 22mm) -->
-          <div class="ai-visual" style="height:22mm; min-height:0; margin-bottom:2mm; border:none;">
+          <div class="ai-visual" style="height:20mm; min-height:0; margin-bottom:2mm; border:none;">
             <img class="ai-visual__image"
                  src="checkup-day-of-items.png"
                  alt="당일 지참물 및 복장 가이드">
           </div>
-          <ul class="card-list" style="font-size:8.5pt; line-height:1.55;">
-            <li><strong>물·음식·커피·껌·흡연 금지</strong></li>
-            <li><strong>편한 옷차림</strong> — 금속 X (X-ray)</li>
-            <li><strong>신분증 + 건강보험증</strong> 필수</li>
-            <li><strong>복용 약 목록 + 이전 결과지</strong></li>
+          <ul class="card-list" style="font-size:8.5pt; line-height:1.5;">
+            <li><strong>1. 물·음식·커피·껌·흡연 금지</strong> — 검사 직전까지</li>
+            <li><strong>2. 편한 옷차림</strong> — 금속 단추·와이어 X (X-ray)</li>
+            <li><strong>3. 신분증 + 건강보험증</strong> — 본인 확인 필수</li>
+            <li><strong>4. 이전 검진 결과지</strong> — 비교 판독에 유용</li>
+            <li><strong>5. 복용 약 목록 + 안경 도수</strong> 적어 오기</li>
           </ul>
         </div>
 
       </div>
     </section>
 
-    <!-- 약 복용 & 내시경 (2-col: 약 비주얼 + 내시경 비주얼) -->
+    <!-- 약 복용 & 내시경 (2-col) -->
     <section>
       <h2 class="section-heading">약 복용 & 내시경 추가 준비 (Medication & Endoscopy)</h2>
       <div class="body-2col">
 
-        <!-- 약 복용 가이드 -->
+        <!-- 약 복용 (78mm × 20mm 내부 이미지, ratio 3.9:1) -->
         <div class="card card--warning">
-          <div class="card-label card-label--warning">약 복용 가이드 · MEDICATION</div>
-          <!-- ★ IMAGE SLOT 4: 약 복용 판단 아이콘 (NEW — 78mm × 22mm) -->
-          <div class="ai-visual" style="height:22mm; min-height:0; margin-bottom:2mm; border:none;">
+          <div class="card-label card-label--warning">약 복용 가이드 · MEDICATION HOLD</div>
+          <div class="ai-visual" style="height:20mm; min-height:0; margin-bottom:2mm; border:none;">
             <img class="ai-visual__image"
                  src="checkup-medication-guide.png"
                  alt="약 복용 판단 가이드">
           </div>
-          <ul class="card-list" style="font-size:8.5pt; line-height:1.55;">
-            <li><strong>혈압약</strong> — 소량 물과 복용 OK</li>
-            <li><strong>당뇨약·인슐린</strong> — 당일 아침 금지</li>
-            <li><strong>항응고제</strong> — 사전 상담 필수</li>
-            <li><strong>항혈소판제</strong> — 처방의 협의 (자가 중단 금지)</li>
+          <ul class="card-list" style="font-size:8.5pt; line-height:1.5;">
+            <li><strong>1. 혈압약 (BP meds)</strong> — 소량 물과 복용 OK (사전 문의)</li>
+            <li><strong>2. 당뇨약·인슐린</strong> — 당일 아침 금지 → 식사 후 복용</li>
+            <li><strong>3. 항응고제 (Warfarin·NOAC)</strong> — 사전 상담 필수</li>
+            <li><strong>4. 항혈소판제 (Aspirin·Plavix)</strong> — 처방의 협의 (자가 중단 금지)</li>
           </ul>
         </div>
 
         <!-- 내시경 추가 준비 -->
         <div class="card">
-          <div class="card-label card-label--steel">내시경 추가 준비 · ENDOSCOPY</div>
-          <!-- ★ IMAGE SLOT 5: 기존 에셋 egd-prep-fasting-clock -->
-          <div class="ai-visual" style="height:22mm; min-height:0; margin-bottom:2mm; border:none;">
+          <div class="card-label card-label--steel">내시경 추가 준비 · ENDOSCOPY PREP</div>
+          <div class="ai-visual" style="height:20mm; min-height:0; margin-bottom:2mm; border:none;">
             <img class="ai-visual__image"
                  src="../../../shared/assets/generated/egd-prep-fasting-clock-20260513.png"
                  alt="내시경 금식 시간 안내">
           </div>
-          <ul class="card-list" style="font-size:8.5pt; line-height:1.55;">
-            <li><strong>위내시경</strong> — 8시간 이상 절대 금식</li>
-            <li><strong>안약·렌즈·의치</strong> — 수면 내시경 시 제거</li>
-            <li><strong>대장내시경</strong> — 별도 장정결제 안내 따름</li>
-            <li><strong>진정 후 운전 금지</strong> — 보호자 동행 권장</li>
+          <ul class="card-list" style="font-size:8.5pt; line-height:1.5;">
+            <li><strong>1. 위내시경 (Gastroscopy)</strong> — 8시간 이상 절대 금식</li>
+            <li><strong>2. 안약·렌즈·의치</strong> — 수면(진정) 내시경 시 제거</li>
+            <li><strong>3. 대장내시경 (Colonoscopy)</strong> — 별도 장정결제 안내 따름</li>
+            <li><strong>4. 진정 내시경 후 운전 금지</strong> — 보호자 동행 권장</li>
           </ul>
         </div>
 
       </div>
     </section>
 
-    <!-- 검진 후 안내 (navy card + 기존 진정 후 경고 이미지) -->
+    <!-- 검진 후 주의사항 (navy card + 기존 진정 후 경고 이미지) -->
     <section>
       <div class="card card--navy" style="display:grid; grid-template-columns:1fr auto; gap:4mm; align-items:center;">
         <div>
-          <div class="card-label">검진 후 주의사항 · AFTER-CARE</div>
+          <div class="card-label">검진 후 주의사항 & 문의 · AFTER-CARE</div>
           <div style="font-size:9pt; line-height:1.5;">
-            <strong style="color:var(--color-sky);">진정 내시경 후 24시간</strong> 운전·기계 조작 금지.
-            <strong style="color:var(--color-sky);">조직검사 시</strong> 당일 음주·격렬한 운동·뜨거운 음식 피하세요.
-            첫 식사는 죽·미음, 당뇨약은 식사 후 복용. 결과지 1~2주 후 발송.
+            <strong style="color:var(--color-sky);">진정 내시경 후 당일 24시간</strong> 운전·기계 조작 금지,
+            <strong style="color:var(--color-sky);">조직검사(biopsy) 시</strong> 당일 음주·격렬한 운동·뜨거운 음식 피하세요.
+            첫 식사는 죽·미음, 당뇨약/인슐린은 식사 후 복용. 결과지 1~2주 후 발송. 문의 ☏ 031-893-4560.
           </div>
         </div>
-        <!-- ★ IMAGE SLOT 6: 기존 에셋 egd-prep-post-sedation-warnings -->
-        <div class="ai-visual" style="width:30mm; height:30mm; min-height:0; border:none; border-radius:var(--radius-sm); overflow:hidden; flex-shrink:0;">
-          <img class="ai-visual__image"
-               src="../../../shared/assets/generated/egd-prep-post-sedation-warnings-20260513.png"
+        <div style="width:28mm; height:28mm; background:rgba(255,255,255,0.95); border-radius:var(--radius-sm); padding:1.5mm; flex-shrink:0;">
+          <img src="../../../shared/assets/generated/egd-prep-post-sedation-warnings-20260513.png"
                alt="진정 내시경 후 주의 아이콘"
-               style="object-fit:contain; padding:1mm; filter:brightness(0) invert(1) opacity(0.85);">
+               style="width:100%; height:100%; object-fit:contain; display:block;">
         </div>
       </div>
     </section>
@@ -193,7 +188,7 @@
       <div class="clinic-name">광교바른내과 · Gwanggyo Barun Internal Medicine</div>
       <div class="clinic-meta">경기 용인 수지구 광교중앙로 298, 4층 · ☏ 031-893-4560</div>
       <div class="clinic-meta">평일 08:30–18:30 · 토요일 08:30–13:30</div>
-      <div class="clinic-meta">근거 — 국민건강보험공단 일반건강검진 안내 · 질병관리청 국가건강검진 가이드 · 대한소화기내시경학회 검사 전 지침</div>
+      <div class="clinic-meta">근거 — 국민건강보험공단(NHIS) 일반건강검진 안내 · 질병관리청(KCDC) 국가건강검진 가이드 · 대한소화기내시경학회 검사 전 지침</div>
       <div class="disclaimer">본 자료는 일반적 안내이며, 복용 중인 약·기저질환에 따라 준비 사항이 달라질 수 있습니다. 정확한 사항은 검진 전 담당 의사와 상담하시기 바랍니다.</div>
     </div>
     <div class="qr-mini">
